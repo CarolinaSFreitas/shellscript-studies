@@ -1,2 +1,2 @@
-# shellscript-studies
-Estudando Shell Scripting através da Alura
+# Estudando Shell Scripting através da Alura
+
