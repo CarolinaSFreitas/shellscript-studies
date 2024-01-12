@@ -15,4 +15,5 @@
    - **1 (stdout)**: Representa a saída padrão. Este descritor de arquivo é associado geralmente à tela, e os programas podem enviar dados para a saída padrão através dele.
 
    - **2 (stderr)**: Representa a saída de erro padrão. Este descritor de arquivo também é associado geralmente à tela, e os programas podem enviar mensagens de erro ou diagnóstico para a saída de erro padrão através dele.
-- 
+
+
