@@ -48,4 +48,18 @@
 ### monitora-servidor-apache.sh
 - o ``curl`` pode verificar o conteúdo da página do localhost com o Apache e trazer o status HTTP para fazer a verificação do servidor
 - O /dev/null é um arquivo especial que tem como objetivo descartar toda a informação de entrada. O arquivo null seria um arquivo especial do sistema que tem como objetivo descartar as informações que são repassadas a ele(ex.:``cat testando.txt 2> /dev/null``, que vai    descartar as mensagens de erro do comando ``cat``
--  
+- O pacote "ssmtp" é um agente de transferência de correio simples (Simple Mail Transfer Protocol) no Linux, então ele enviará um e-mail do status do servidor HTTP da máquina p/ o e-mail do administrador do servidor(ou qqr outra opção desejada) - pode ser mais recomendável considerar alternativas mais modernas e seguras, como 'msmtp', 'postfix' ou 'sendmail'.
+  - Ao editar o arquivo de configuração do ssmtp (/etc/ssmtp/ssmtp.conf), será definido o e-mail agente que irá enviar os e-mails para o administrador
+    <img width="409" alt="image" src="https://github.com/CarolinaSFreitas/shellscript-studies/assets/99994934/2c2a52c1-b6ce-422f-a6ef-9f005be2102c">
+    
+- O pacote "mailutils" irá ajudar a de fato **enviar** o status do Apache por e-mail através do script
+  
+  ``mail -s "Problema no Servidor" adm.mutillidae@gmail.com<<del
+    Houve um problema no servidor e os usuários pararam de ter acesso ao conteúdo web.
+    del
+  ``
+  Esse trecho do script define a mensagem do e-mail, o subject e para quem será enviado. o ``<<del ..... del`` é o delimitador da mensagem do e-mail em si.
+  **Lembrando que toda essa verificação do status do servidor (e etc) através da execução do shellscript está sendo feita pelo crontab**
+
+### 
+
