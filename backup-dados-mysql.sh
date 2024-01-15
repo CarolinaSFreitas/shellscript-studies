@@ -3,7 +3,7 @@
 CAMINHO_HOME=/home/carol
 
 cd $CAMINHO_HOME
-if [ ? -d backup ]
+if [ ! -d backup ]
 then
     mkdir backup
 fi
