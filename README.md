@@ -52,6 +52,14 @@
   - Ao editar o arquivo de configuração do ssmtp (/etc/ssmtp/ssmtp.conf), será definido o e-mail agente que irá enviar os e-mails para o administrador
     
     <img width="409" alt="image" src="https://github.com/CarolinaSFreitas/shellscript-studies/assets/99994934/2c2a52c1-b6ce-422f-a6ef-9f005be2102c">
+
+    ``
+    root=[seu e-mail]
+    mailhub=smtp.gmail.com:587
+    AuthUser=[seu e-mail]
+    AuthPass=[sua senha]
+    UseSTARTTLS=yes
+    ``
     
 - O pacote "mailutils" irá ajudar a de fato **enviar** o status do Apache por e-mail através do script
   
