@@ -74,3 +74,7 @@
 ### verifica-memoria-consumida.sh
 - ``-gt``: greater than
 
+### backup.aws.sh
+- A opção '-v' no exemplo ``cat testando.txt | grep -v tabelas`` faz uma "busca invertida", ou seja, serão buscadas todas as linhas com exceção da linha com o nome passado como argumento para o grep, dessa forma teremos a impressão das linhas com os nomes 'produtos, resultado, banco' mesmo se no arquivo testando.txt nós tivermos as palavras 'tabelas, produtos, resultado e banco' cada uma em uma linha.
+- Esse script + o crontab fará com que o backup do banco de dados seja enviado para o S3 automaticamente com o  nome do arquivo sendo a data e o conteúdo as tabelas de backup
+- 
