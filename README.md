@@ -41,4 +41,7 @@
    O delimitador de palavras é o Word Boundary, simbolizado por \b. Adicionando esse delimitador nas extremidades da expressão, não será reconhecido nenhum algarismo que ultrapasse a quantidade de 3 por intervalo. ``\b([0-9]{1,3}\.){3}[0-9]{1,3}\b``
    Bom, com isso, sabemos que o endereço IP 192.168.1.1000 não será aceito pois ele não está respeitando as regras da expressão.
 
-### 
+### filtro-requisicao.sh
+- ``-eq`` (equal) compara valores inteiros
+- Na estrutura ``case`` a verificação é feita pelo tipo de dado e o terminador(``;;``) vai nessa verificação. Ex. de valor do parâmetro: ``GET), POST), PUT), DELETE)``. O ``*)`` é como um else, qualquer outro parâmetro fora dos especificados na estrutura entram nesse.
+- 
