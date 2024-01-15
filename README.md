@@ -71,5 +71,6 @@
   Esse trecho do script define a mensagem do e-mail, o subject e para quem será enviado. o ``<<del ..... del`` é o delimitador da mensagem do e-mail em si.
   **Lembrando que toda essa verificação do status do servidor (e etc) através da execução do shellscript está sendo feita pelo crontab**
 
-### 
+### verifica-memoria-consumida.sh
+- ``-gt``: greater than
 
