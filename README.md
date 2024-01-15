@@ -44,4 +44,8 @@
 ### filtro-requisicao.sh
 - ``-eq`` (equal) compara valores inteiros
 - Na estrutura ``case`` a verificação é feita pelo tipo de dado e o terminador(``;;``) vai nessa verificação. Ex. de valor do parâmetro: ``GET), POST), PUT), DELETE)``. O ``*)`` é como um else, qualquer outro parâmetro fora dos especificados na estrutura entram nesse.
-- 
+
+### monitora-servidor-apache.sh
+- o ``curl`` pode verificar o conteúdo da página do localhost com o Apache e trazer o status HTTP para fazer a verificação do servidor
+- O /dev/null é um arquivo especial que tem como objetivo descartar toda a informação de entrada. O arquivo null seria um arquivo especial do sistema que tem como objetivo descartar as informações que são repassadas a ele(ex.:``cat testando.txt 2> /dev/null``, que vai    descartar as mensagens de erro do comando ``cat``
+-  
