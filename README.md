@@ -23,7 +23,7 @@
 
 ### filtrando-resultado-apache.sh
 -  Comparando parâmetro com regex: ``[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}`` significa que os intervalos do IPv4 buscado no terminal podem ter 3 algarismos de 0 até 9
-  - Podemos melhorar a nossa expressão regular. Se repararmos, o trecho [0-9]{1,3}. se repete por 3 vezes. Poderíamos simplesmente agrupar esse valor entre () e colocar um quantificador para dizer que a parte agrupada irá se repetir por 3 vezes:
+   - Podemos melhorar a nossa expressão regular. Se repararmos, o trecho [0-9]{1,3}. se repete por 3 vezes. Poderíamos simplesmente agrupar esse valor entre () e colocar um quantificador para dizer que a parte agrupada irá se repetir por 3 vezes:
     ``([0-9]{1,3}.){3}[0-9]{1,3}`` 
     Para nos ajudar nessa verificação, utilizaremos o site regex101.com. Existem outros sites que também conseguem essa validação. Copiaremos a expressão criada, e vamos colar no campo REGULAR EXPRESSION nesse mesmo site. Depois, no campo TEST STRING, colocaremos o   
     endereço IP que havíamos testado: 192.168.1.10.
@@ -41,4 +41,4 @@
    O delimitador de palavras é o Word Boundary, simbolizado por \b. Adicionando esse delimitador nas extremidades da expressão, não será reconhecido nenhum algarismo que ultrapasse a quantidade de 3 por intervalo. ``\b([0-9]{1,3}\.){3}[0-9]{1,3}\b``
    Bom, com isso, sabemos que o endereço IP 192.168.1.1000 não será aceito pois ele não está respeitando as regras da expressão.
 
-- 
+### 
