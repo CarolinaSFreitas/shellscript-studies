@@ -81,4 +81,3 @@
 ### restore-aws-s3.sh
 - Esse sh trará as informações do bucket S3 definidas no parâmetro do usuário
 - ``bash restore-aws-s3.sh <nome-tabela-db-p-restauro>`` faz o restore da tabela que está no S3 para o banco de dados 
-- 
