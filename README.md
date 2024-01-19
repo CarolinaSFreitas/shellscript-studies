@@ -86,3 +86,11 @@
 
 - `` chmod +x <arquivo>.sh ``
 - `` ./<arquivo>.sh ``
+- ``top`` para verificar os processos
+- ``ps`` para ver os processos em execução. 
+- `` ps aux `` lista mais detalhada dos processos 
+- `` ps aux | grep -v grep nginx `` traz os processos do nginx sem contar o grep em si nessa busca 
+- `` pgrep nginx `` retorna os ids dos processos do nginx sem trazer o grep também
+- `` pgrep nginx > /dev/null `` o resultado vai para o /dev/null 
+- `` pgrIp nginx &> /dev/null ``, apesar do comando estar digitado errado o "&" envia o erro para o /dev/null
+- 
